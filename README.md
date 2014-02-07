@@ -2,14 +2,14 @@
 ![](http://triniteabsolue.files.wordpress.com/2013/05/yin_yang-svg-2.png)
 
 ##Synopsis
-Apple is wreaking havoc by rejecting apps using IDFA for non advertising purposes. While this is a legitimate intent, enforcement by way of app rejection will penalize those who use it correctly, and yet, fall on the wrong side of interpretation. OpenIDFA offers a compelling alternative that does not depend on Apple’s own frameworks and guidelines, while at the same time helping with general privacy concerns.
+[Apple is wreaking havoc by rejecting apps using IDFA for non advertising purposes][4]. While this is a legitimate intent, enforcement by way of app rejection will penalize those who use it correctly, and yet, fall on the wrong side of interpretation. OpenIDFA offers a compelling alternative that does not depend on Apple’s own frameworks and guidelines, while at the same time helping with general privacy concerns.
 
 ##Introduction
-Some people never learn! On one side you had people using UDID when clearly they shoudn’t have. And so Apple deprecated UDID, just like that. Hence came OpenUDID. And then Apple did the right thing one iOS release later by introducing a pair of identifiers: VendorID and IDforAvertisers (IDFA or IFA). But then again, some were using the IDFA when clearly they shouldn’t have; only to hear the sound of rejection much later, just like that. Some people never learn! But who’s to blame?
+Some people never learn! On one side you had people using UDID when clearly they shoudn’t have. And so Apple deprecated UDID, just like that. Hence came [OpenUDID][2]. And then Apple did the right thing one iOS release later by introducing a pair of identifiers: VendorID and [IDforAvertisers][6] (IDFA or IFA). But then again, some were using the IDFA when clearly they shouldn’t have; only to hear the sound of rejection much later, just like that. Some people never learn! [But who’s to blame?][5]
 
 Just like with industrial design, the form of an API should follow its function.
 
-#####Here comes OpenIDFA!
+#####Here comes [OpenIDFA][7]!
 
 OpenIDFA is an alternative to IDFA that strives to achieve the Yin and the Yang:
 - lets mobile ad professionals do their job by allowing cross-app event attribution
@@ -22,7 +22,7 @@ OpenIDFA is an alternative to IDFA that strives to achieve the Yin and the Yang:
 As always, we don’t know for sure. Apple communicates by way of rejection and guidelines… so it’s up for interpretation. In any case, IDFA allegedly is ok for its initial intent: ad conversion tracking. Advanced advertising techniques however need to start tracking earlier, and therefore need the actual IDFA despite not showing an ad then and there. Will Apple reject on that basis? Recent interpretations seem to indicate that this is the case. So IDFA is a hot-potato subject again. We can’t rely on it because it appears to be a moving target. Furthermore, someone will need to explain how Apple intends to enforce the “limit tracking” option… if it can’t be enforced systematically and fairly, why is it there?
 
 ####Why OpenIDFA?
-Well, much like we did with OpenUDID, the idea is to offer an alternative (or complementary solution) to IDFA-in-turmoil, and at least for a while bring peace of mind to those working the Yin. Hopefully, the Yang will be fulfilled at the same time in new and radical ways.
+Well, much like we did with [OpenUDID][2], the idea is to offer an alternative (or complementary solution) to IDFA-in-turmoil, and at least for a while bring peace of mind to those working the Yin. Hopefully, the Yang will be fulfilled at the same time in new and radical ways.
 
 ####How does it work?
 Well, there is a little bit of code jujitsu, a lot of common sense, and plenty of love.
@@ -44,7 +44,7 @@ To make room for the Yang, something had to give. As such, OpenIDFA is not a dro
 ####Does OpenIDFA replace my current attribution solution? 
 You decide. If Apple is fine with your use of IDFA, then why change? Reversely, what prevents you from also logging OpenIDFA in case Apple changes its mind? Complementary or alternative. Your call. If you’re using a 3rd party attribution solution, engage with your provider and invite them to consider OpenIDFA, instead of their own proprietary spin which will effectively allow them to lock you in. In addition, attribution solutions can be very expensive and they tend to prefer proprietary solutions (which recreate silos and prevent interoperability).
 
-####How is that different from fingerprinting 
+####How is that different from fingerprinting?
 Fingerprinting is a technique that typically aims to recreate a unique device or user identifier that is persistent forever, thereby ignoring privacy concerns; at the same time, fingerprinting identifiers are often not so unique (80%-90% range) so they fail to measure accurately conversion rates. OpenIDFA uses advanced fingerprinting techniques combined with other properties to achieve maximum uniqueness (99.99%+), while at the sametime having built-in expiration to prevent data hoarding and long term tracking (cf. the Yin and the Yang).
 
 ####Why can't I just use vendorID again?
@@ -71,11 +71,6 @@ OpenIDFA will cost you zero bitcoin, available on Feb 7th 2014.
 
 ####Who’s the maker?
 OpenIDFA is brought to you by [Appsfire][3], conceived over a few sleepless nights by Appsfire’s co-founder and CTO [Yann Lechelle][1] (also author of [OpenUDID][2] back in 2011). As with our own native ad technologies, OpenIDFA strives to raise the bar in terms of best practice. Feel free to reach out with questions directly on Github!
-
-[1]: http://twitter.com/ylechelle  "Yann LECHELLE"
-[2]: http://openudid.org/  "OpenUDID.org"
-[3]: http://appsfire.com/  "appsfire.com"
-
 
 ##LOW LEVEL FAQ
 ####Where’s my drop-in replacement?
@@ -123,3 +118,11 @@ http://twitter.com/OpenIDFA
 
 ####Message to Apple
 Why do we find out about important evolutions in the way the iOS APIs are to be used via blogs, apps being rejected and the likes? It would be immensely useful if the eco-system’s needs were considered prior to such unilateral decisions. Again, we love your iDevices, we’re happy to help you sell more of them… but consider this: reciprocity will go a long way…
+
+[1]: http://twitter.com/ylechelle  "Yann LECHELLE"
+[2]: http://openudid.org/  "OpenUDID.org"
+[3]: http://appsfire.com/  "appsfire.com"
+[4]: http://techcrunch.com/2014/02/03/apples-latest-crackdown-apps-pulling-the-advertising-identifier-but-not-showing-ads-are-being-rejected-from-app-store/ "TechCrunch"
+[5]: https://developer.apple.com "apple.com developer"
+[6]: https://developer.apple.com/library/ios/documentation/AdSupport/Reference/ASIdentifierManager_Ref/ASIdentifierManager.html "IDFA"
+[7]: http://OpenIDFA.org "OpenIDFA"
