@@ -34,6 +34,7 @@ The OpenIDFA uses a combination of anti-collision fingerprinting, cryptographic 
 | **Uniqueness**      |        Typically unique |     Quasi unique >100%-10^-5     
 | **Expiration**       |        Explicit reset by user (rare, but still non-deterministic for developers/advertisers) |     Implicit reset, non-deterministic but fairly rare     
 | **Tracking Limitation**         | User toggle/developer driven (enforcement unknown) |      Long term tracking impossible  (3 days at best)      
+| **Framework dependencies**         | AdSupport framework |      none specific      
 | **Good for…**   |       frequency capping, conversion events |    frequency capping, conversion events, all purpose cross-application event attribution (e.g. for re-engagement or re-targeting)
 | **Bad for…** (use vendorID instead)    |     Long term tracking, LTV (at least not alone), analytics, estimating the number of unique users, security and fraud detection, and debugging - basically not good for non-advertising purposes |   Long term tracking, LTV (at least not alone), analytics, estimating the number of unique users, security and fraud detection, and debugging - basically not good for non-advertising purposes
 | **Sustainability** | Unknown. Could be deprecated, evolved, interpreted... | Who knows? Nothing lasts forever, but at least, Apple didn’t write this piece of code...
