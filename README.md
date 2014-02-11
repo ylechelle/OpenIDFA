@@ -45,7 +45,7 @@ To make room for the Yang, something had to give. As such, OpenIDFA is not a dro
 You decide. If Apple is fine with your use of IDFA, then why change? Reversely, what prevents you from also logging OpenIDFA in case Apple changes its mind? Complementary or alternative. Your call. If you’re using a 3rd party attribution solution, engage with your provider and invite them to consider OpenIDFA, instead of their own proprietary spin which will effectively allow them to lock you in. In addition, attribution solutions can be very expensive and they tend to prefer proprietary solutions (which recreate silos and prevent interoperability).
 
 ####How is that different from fingerprinting?
-Fingerprinting is a technique that typically aims to recreate a unique device or user identifier that is persistent forever, thereby ignoring privacy concerns; at the same time, fingerprinting identifiers are often not so unique (80%-90% range) so they fail to measure accurately conversion rates. OpenIDFA uses advanced fingerprinting techniques combined with other properties to achieve maximum uniqueness (99.99%+), while at the sametime having built-in expiration to prevent data hoarding and long term tracking (cf. the Yin and the Yang).
+Fingerprinting is a technique that typically aims to recreate a unique device or user identifier that is persistent forever, thereby ignoring privacy concerns; at the same time, fingerprinting identifiers are often not so unique (80%-90% range) so they fail to measure accurately conversion rates. OpenIDFA uses advanced fingerprinting techniques combined with other properties to achieve maximum uniqueness (99.99%+), while at the same time having built-in expiration to prevent data hoarding and long term tracking (cf. the Yin and the Yang).
 
 ####Why can't I just use vendorID again?
 VendorID is no good for advertising. Attribution via VendorID is impossible between the publisher app and the advertised app (typically two distinct vendors) since the IDs will be guaranteed to be different. On the other hand, VendorID is perfect for endogenous vendor Analytics, A/B testing, fraud detection, etc…
@@ -54,8 +54,8 @@ VendorID is no good for advertising. Attribution via VendorID is impossible betw
 - *Who has access to OpenIDFA ids?* Only those that call for it within a day. It’s a shared identifier, but only lasts a day, very much like IDFA. It is not owned by anyone in particular, it is decentralized by nature.
 Is it compliant with the law? Certainly. If anything, OpenIDFA is more ephemereal than the formal IDFA and thefore further in line with the spirit of privacy protection.
 - *Is OpenIDFA compliant with the App Store terms of services?* Certainly, the OpenIDFA uses strictly public APIs.
-- *Is OpenIDFA bound to a user or the device?* OpenIDFA is bound to the device itself much like OpenIDFA (and therefore to the user using the device)
-- *Is OpenIDFA anonimized?* The identifier itself is anonymous. But as with any identifier, we rely on developer best practice to anonymize data they collect. Luckily, OpenIDFA expires within a day, so it won’t be of much use after 24h!
+- *Is OpenIDFA bound to a user or the device?* OpenIDFA is bound to the device itself much like IDFA (and therefore to the user using the device)
+- *Is OpenIDFA anonymized?* The identifier itself is anonymous. But as with any identifier, we rely on developer best practice to anonymize data they collect. Luckily, OpenIDFA expires within a day, so it won’t be of much use after 24h!
 
 ####What are typical use cases for OpenIDFA?
 - *Server-side frequency capping:* use OpenIDFA to minimize exposure of a given ad by counting how many times a given identifier (or a trio, see below) has been exposed to it...
@@ -65,6 +65,11 @@ Is it compliant with the law? Certainly. If anything, OpenIDFA is more ephemerea
 ####Why call it open when it's actually not open source?
 First there was OpenUDID, now OpenIDFA. Seemed fitting no?
 OpenIDFA is provided as a static library that somewhat protects the inherent properties that limit tracking; as such, it is not open-source. Yet, OpenIDFA remains open and free to use by all, in a decentralized fashion, as was the case for OpenUDID. OpenIDFA is interoperable and not proprietary to any vendor. It’s part of the commons now. In fact, it is distributed under the Creative Commons license (Attribution BY + NoDerivatives ND).
+
+Now, about that source code: leap of faith, for now! Though the code is deceivingly simple. The essence lies in the acceptance that tracking tokens MUST expire, sooner rather than later (instead of explicit reset or limitations enacted by the user as is the case with the current IDFA system). Once that baseline is secured, the code follows the function and vice-versa. 
+
+As stated above, the code is locked up inside that lib. Feel free to reverse engineer it, you're likely to be deceived actually! That being said, the code is not meant to remain a mystery. [Register here][8] if you would like to be considered for preliminary peer-review.
+
 
 ####How much does it cost? When is it available?
 OpenIDFA will cost you zero bitcoin, available on Feb 7th 2014.
@@ -126,3 +131,4 @@ Why do we find out about important evolutions in the way the iOS APIs are to be 
 [5]: https://developer.apple.com "apple.com developer"
 [6]: https://developer.apple.com/library/ios/documentation/AdSupport/Reference/ASIdentifierManager_Ref/ASIdentifierManager.html "IDFA"
 [7]: http://OpenIDFA.org "OpenIDFA"
+[8]: https://docs.google.com/forms/d/1ynocrB2Zeern0_bzpZoREE_2OXMd8Pgh-nO9kda6N6g/viewform "Register for Code"
