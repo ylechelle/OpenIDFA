@@ -1,5 +1,5 @@
 #OpenIDFA for iOS
-![](http://triniteabsolue.files.wordpress.com/2013/05/yin_yang-svg-2.png)
+![](https://raw.github.com/ylechelle/OpenIDFA/82191382b0a399d50038522899ffd2ee1b3f6bf8/artwork/OpenIDFA_256x256.png)
 
 ##Synopsis
 [Apple is wreaking havoc by rejecting apps using IDFA for non advertising purposes][4]. While this is a legitimate intent, enforcement by way of app rejection will penalize those who use it correctly, and yet, fall on the wrong side of interpretation. OpenIDFA offers a compelling alternative that does not depend on Apple’s own frameworks and guidelines, while at the same time helping with general privacy concerns.
