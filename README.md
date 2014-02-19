@@ -1,4 +1,7 @@
 #OpenIDFA for iOS
+###"The Snapchat of Device IDs"
+#####Now open for peer review [[register here][8]]
+
 ![](https://raw.github.com/ylechelle/OpenIDFA/82191382b0a399d50038522899ffd2ee1b3f6bf8/artwork/OpenIDFA_256x256.png)
 
 ##Synopsis
