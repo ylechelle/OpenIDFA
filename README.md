@@ -1,4 +1,4 @@
-#OpenIDFA for iOS
+#OpenIDFA: the sustainable and privacy friendly tracking identifier for iOS
 ###"The Snapchat of Device IDs"
 #####Now open for peer review [[register here][8]]
 
