@@ -1,7 +1,7 @@
 #OpenIDFA: the sustainable and privacy friendly tracking identifier for iOS
 ###"The Snapchat of Device IDs"
 
-![](http://f.cl.ly/items/2M251Z2i0E1h1E2z140w/Untitled_12.jpg)
+![](http://f.cl.ly/items/0T0k2u0G3g3Z0o2D1f1A/OpenIDFAsupporters.jpg)
 
 ##Synopsis
 [Apple is wreaking havoc by rejecting apps using IDFA for non advertising purposes][4]. While this is a legitimate intent, enforcement by way of app rejection will penalize those who use it correctly, and yet, fall on the wrong side of interpretation. OpenIDFA offers a compelling alternative that does not depend on Apple’s own frameworks and guidelines, while at the same time helping with general privacy concerns.
