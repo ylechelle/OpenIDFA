@@ -1,8 +1,7 @@
 #OpenIDFA: the sustainable and privacy friendly tracking identifier for iOS
 ###"The Snapchat of Device IDs"
-#####Now open for peer review [[register here][8]]
 
-![](https://raw.github.com/ylechelle/OpenIDFA/82191382b0a399d50038522899ffd2ee1b3f6bf8/artwork/OpenIDFA_256x256.png)
+![](http://f.cl.ly/items/2M251Z2i0E1h1E2z140w/Untitled_12.jpg)
 
 ##Synopsis
 [Apple is wreaking havoc by rejecting apps using IDFA for non advertising purposes][4]. While this is a legitimate intent, enforcement by way of app rejection will penalize those who use it correctly, and yet, fall on the wrong side of interpretation. OpenIDFA offers a compelling alternative that does not depend on Apple’s own frameworks and guidelines, while at the same time helping with general privacy concerns.
@@ -66,13 +65,12 @@ Is it compliant with the law? Certainly. If anything, OpenIDFA is more ephemerea
 - *Conversion tracking:* use OpenIDFA to record an impression, a click event (a tap really!), and then once the advertised app is installed and launched, match the current OpenIDFA to attribute the source... 
 - *Pre-impression event tracking for re-engagement and re-targeting:* use OpenIDFA to track e-commerce events inside the advertiser app; then match the OpenIDFA on the publisher’s side to present a higher impact advertisement...
 
-####Why call it open when it's actually not open source?
+####How open is OpenIDFA?
 First there was OpenUDID, now OpenIDFA. Seemed fitting no?
-OpenIDFA is provided as a static library that somewhat protects the inherent properties that limit tracking; as such, it is not open-source. Yet, OpenIDFA remains open and free to use by all, in a decentralized fashion, as was the case for OpenUDID. OpenIDFA is interoperable and not proprietary to any vendor. It’s part of the commons now. In fact, it is distributed under the Creative Commons license (Attribution BY + NoDerivatives ND).
+OpenIDFA was initially provided as a static library to somewhat protects the inherent properties that limit long term persistent. Today, OpenIDFA is open source and free to be reviewed and used by all, in a decentralized fashion, as was the case for OpenUDID. OpenIDFA is interoperable and not proprietary to any vendor. It’s part of the commons now. In fact, it is distributed under the Creative Commons license (Attribution BY + NoDerivatives ND).
 
-Now, about that source code: leap of faith, for now! Though the code is deceivingly simple. The essence lies in the acceptance that tracking tokens MUST expire, sooner rather than later (instead of explicit reset or limitations enacted by the user as is the case with the current IDFA system). Once that baseline is secured, the code follows the function and vice-versa. 
+About the srouce code: again, the essence lies in the acceptance that tracking tokens MUST expire, sooner rather than later (instead of explicit reset or limitations enacted by the user as is the case with the current IDFA system). Once that baseline is secured, the code follows the function and vice-versa. 
 
-As stated above, the code is locked up inside that lib. Feel free to reverse engineer it, you're likely to be deceived actually! That being said, the code is not meant to remain a mystery. [Register here][8] if you would like to be considered for preliminary peer-review.
 
 
 ####How much does it cost? When is it available?
@@ -91,7 +89,7 @@ Apple’s way:
 
 The High Way:
 
-	// add the OpenIDFA.a static library
+	// add the OpenIDFA.h and OpenIDFA.m to your project
 	#import "OpenIDFA.h"
 	NSString* OpenIDFA = [OpenIDFA sameDayOpenIDFA];
 
@@ -119,9 +117,11 @@ You can now breathe easy. You can purge your databases daily (remember, those Op
 ##MISCELLANEOUS
 
 #####Version History
-- Feb 4 2014: birth of the OpenIDFA project
-- Feb 7 2014: release on GitHub
-
+- Feb 04 2014: birth of the OpenIDFA project
+- Feb 07 2014: release of static library GitHub
+- Feb 12 2014: source released to a selection of early adopters for peer review
+- Mar 18 2014: source released to the greater community
+ 
 ####Follow OpenIDFA on Twitter
 http://twitter.com/OpenIDFA
 
@@ -135,4 +135,3 @@ Why do we find out about important evolutions in the way the iOS APIs are to be 
 [5]: https://developer.apple.com "apple.com developer"
 [6]: https://developer.apple.com/library/ios/documentation/AdSupport/Reference/ASIdentifierManager_Ref/ASIdentifierManager.html "IDFA"
 [7]: http://OpenIDFA.org "OpenIDFA"
-[8]: https://docs.google.com/forms/d/1ynocrB2Zeern0_bzpZoREE_2OXMd8Pgh-nO9kda6N6g/viewform "Register for Code"
