@@ -21,6 +21,8 @@
 //
 
 #import "OpenIDFA.h"
+#import <UIKit/UIKit.h>
+#import <UIKit/UIDevice.h>
 #import <CommonCrypto/CommonDigest.h>
 #include <sys/sysctl.h>
 #include <net/if.h>
