@@ -178,7 +178,7 @@
     //
     NSDateFormatter* dateFormatter = [ [ NSDateFormatter alloc ] init ];
     [ dateFormatter setDateFormat:@"yyMMdd" ];
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSDateComponents *hourShift = [[NSDateComponents alloc] init];
     [hourShift setHour:-4];
     NSDate *currentDay= [calendar dateByAddingComponents:hourShift toDate:[NSDate date] options:0];
